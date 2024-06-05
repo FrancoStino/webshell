@@ -29,28 +29,41 @@ const helpObj = {
   ],
 }
 
+
+
 const createHelp = () : string[] => {
-  const help : string[] = []
-  help.push("<br>")
+  const help: string[] = [];
+  help.push('<br>');
 
   helpObj.commands.forEach((ele) => {
-    const SPACE = "&nbsp;";
-    let string = "";
+    const SPACE = '&nbsp;';
+    let string = '';
     string += SPACE.repeat(2);
     string += "<span class='command'>";
     string += ele[0];
-    string += "</span>";
+    string += '</span>';
     string += SPACE.repeat(17 - ele[0].length);
     string += ele[1];
     help.push(string);
-  })
+  });
 
-  help.push("<br>");
-  help.push("Press <span class='keys'>[Tab]</span> for auto completion.");
-  help.push("Press <span class='keys'>[Esc]</span> to clear the input line.");
-  help.push("Press <span class='keys'>[↑][↓]</span> to scroll through your history of commands.");
-  help.push("<br>");
-  return help
+  // Funzione per rilevare se il dispositivo è uno smartphone
+  function isSmartphone(): boolean {
+    return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  // Aggiungi i messaggi di aiuto solo se non è uno smartphone
+  if (!isSmartphone()) {
+    help.push('<br>');
+    help.push("Press <span class='keys'>[Tab]</span> for auto completion.");
+    help.push("Press <span class='keys'>[Esc]</span> to clear the input line.");
+    help.push("Press <span class='keys'>[↑][↓]</span> to scroll through your history of commands.");
+    
+  }
+  
+  help.push('<br>');
+
+  return help;
 }
 
 export const HELP = createHelp();

@@ -31,7 +31,7 @@ const PROMPT = document.getElementById("prompt");
 const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
-const REPO_LINK = command.repoLink;
+//const REPO_LINK = command.repoLink;
 
 const scrollToBottom = () => {
   const MAIN = document.getElementById("main");
@@ -224,12 +224,12 @@ function commandHandler(input : string) {
       }
       writeLines(PROJECTS);
       break;
-    case 'repo':
+    /*case 'repo':
       writeLines(["Redirecting to github.com...", "<br>"]);
       setTimeout(() => {
         window.open(REPO_LINK, '_blank');
       }, 500);
-      break;
+      break;*/
     case 'linkedin':
       //add stuff here
       break;
@@ -396,9 +396,17 @@ const initEventListeners = () => {
 
   window.addEventListener('click', () => {
     USERINPUT.focus();
+    console.log(
+      `%c 🫣 Password: ${command.password}`,
+      'font-size: 12px;font-family: monospace;background: black;display: inline-block;color: white;padding: 15px;border: 2px solid white;',
+    );
   });
 
-  console.log(`%cPassword: ${command.password}`, "color: red; font-size: 20px;");
 }
+
+console.log(
+  '%c 🤌🏻 Developed by davideladisa.it',
+  'font-size: 12px;font-family: monospace;background: black;display: inline-block;color: white;padding: 15px;border: 2px solid white;',
+);
 
 initEventListeners();

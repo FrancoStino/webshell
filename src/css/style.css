@@ -67,10 +67,6 @@ div {
   line-height: 22px;
 }
 
-@font-face {
-  font-family: ascii;
-  src: url("./font/IBMPlexMono-Thin.ttf")
-}
 
 pre {
   margin: 0;
