@@ -3,21 +3,21 @@
 :root {
   font-family: 'Cascadia Code', monospace;
   font-weight: 200;
-  --bg: #0C0623;
-  --border: #FFADE2;
-  --text: #F8DDE5;
-  --prompt-default: #A5A7A7;
-  --prompt-1: #FE6BC9;
-  --prompt-2: #70FDFF;
+  --bg: #0c0623;
+  --border: #ffade2;
+  --text: #f8dde5;
+  --prompt-default: #a5a7a7;
+  --prompt-1: #fe6bc9;
+  --prompt-2: #70fdff;
 }
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -67,13 +67,12 @@ div {
   line-height: 22px;
 }
 
-
 pre {
   margin: 0;
   padding: 0;
   line-height: 20px !important;
-  font-family: "ascii", monospace;
-  background: linear-gradient(90deg, #FF9951, #FF7685);
+  font-family: 'ascii', monospace;
+  background: linear-gradient(90deg, #ff9951, #ff7685);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -86,13 +85,19 @@ input {
   resize: none;
   outline: none;
   font-size: 16px;
-  color: #FF7685;
+  color: #ff7685;
   caret-color: var(--prompt-default);
   width: 50%;
 }
 
+#password-field {
+  text-security: disc;
+  -webkit-text-security: disc;
+  -moz-text-security: disc;
+}
+
 a {
-  color: #B6AAEE;
+  color: #b6aaee;
 }
 
 a:hover {
@@ -113,7 +118,6 @@ a:hover {
 #bar-1 {
   height: 36px;
   background-color: var(--border);
-  color: #FFF !important;
   line-height: 36px;
   padding-left: 10px;
 }
@@ -136,7 +140,6 @@ a:hover {
   margin-top: 3px;
 }
 
-
 #bar-5 {
   height: 1px;
   background-color: var(--border);
@@ -154,10 +157,8 @@ a:hover {
 }
 
 .command {
-  text-shadow:
-    0 0 7px #fff,
-    0 0 151px var(--border);
-  color: #FD9BDB;
+  text-shadow: 0 0 7px #fff, 0 0 151px var(--border);
+  color: #fd9bdb;
 }
 
 .output {
@@ -165,7 +166,7 @@ a:hover {
 }
 
 .keys {
-  color: #FF9951;
+  color: #ff9951;
   font-weight: 400;
 }
 
