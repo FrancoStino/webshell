@@ -5,7 +5,6 @@ import { ABOUT } from "./commands/about"
 import { DEFAULT } from "./commands/default";
 import { PROJECTS } from "./commands/projects";
 import { createWhoami } from "./commands/whoami";
-import gradient from 'gradient-string';
 
 //mutWriteLines gets deleted and reassigned
 let mutWriteLines = document.getElementById("write-lines");
@@ -402,35 +401,4 @@ const initEventListeners = () => {
   console.log(`%cPassword: ${command.password}`, "color: red; font-size: 20px;");
 }
 
-
-const createBanner = (): string[] => {
-  const banner: string[] = [];
-  const g = gradient('red', 'blue'); // Definisci il gradiente che vuoi usare
-
-  banner.push('<br>');
-  command.ascii.forEach((ele) => {
-    let bannerString = '';
-    // Questo è per l'arte ASCII
-    for (let i = 0; i < ele.length; i++) {
-      if (ele[i] === ' ') {
-        bannerString += '&nbsp;';
-      } else {
-        bannerString += ele[i];
-      }
-    }
-    // Applica il gradiente al bannerString
-    banner.push(g(bannerString));
-  });
-
-  return banner;
-};
-
-// Esempio di utilizzo
-const banner = createBanner();
-banner.forEach((line) => console.log(line));
-
-
 initEventListeners();
-
-
-
