@@ -13,7 +13,7 @@ import command from '../config.json' assert {type: 'json'};
   const preUser = `#pre-user {color: ${command.colors.prompt.user}}`
   const user = `#user {color: ${command.colors.prompt.user}}`
   const prompt = `#prompt {color: ${command.colors.prompt.default}}`
-  const banner = `pre {color: ${command.colors.banner}}`
+  const banner = `pre {background: ${command.colors.banner}; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}`;
   const link = `a {color: ${command.colors.link.text}}`
   const linkHighlight = `a:hover {background: ${command.colors.link.highlightColor}}`
   const linkTextHighlight = `a:hover {color: ${command.colors.link.highlightText}}`

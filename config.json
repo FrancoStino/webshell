@@ -1,23 +1,23 @@
 {
   "ascii": [
-    "███████╗██╗  ██╗███████╗██╗     ██╗",
-    "██╔════╝██║  ██║██╔════╝██║     ██║",
-    "███████╗███████║█████╗  ██║     ██║",
-    "╚════██║██╔══██║██╔══╝  ██║     ██║",
-    "███████║██║  ██║███████╗███████╗███████╗",
-    "╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝"
+"██████╗  █████╗ ██╗   ██╗██╗██████╗ ███████╗    ██╗      █████╗ ██████╗ ██╗███████╗ █████╗", 
+"██╔══██╗██╔══██╗██║   ██║██║██╔══██╗██╔════╝    ██║     ██╔══██╗██╔══██╗██║██╔════╝██╔══██╗",
+"██║  ██║███████║██║   ██║██║██║  ██║█████╗      ██║     ███████║██║  ██║██║███████╗███████║",
+"██║  ██║██╔══██║╚██╗ ██╔╝██║██║  ██║██╔══╝      ██║     ██╔══██║██║  ██║██║╚════██║██╔══██║",
+"██████╔╝██║  ██║ ╚████╔╝ ██║██████╔╝███████╗    ███████╗██║  ██║██████╔╝██║███████║██║  ██║",
+"╚═════╝ ╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═════╝ ╚══════╝    ╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚══════╝╚═╝  ╚═╝"
   ],
-  "title": "WebShell",
-  "username": "visitor",
-  "hostname": "webshell",
-  "password": "050823",
+  "title": "Davide Ladisa",
+  "username": "user",
+  "hostname": "orriblewebsite",
+  "password": "root",
   "repoLink": "https://github.com/nasan016/webshell",
   "social": {
-    "email": "your@email.com",
-    "github": "yourgithub",
-    "linkedin": "you"
+    "email": "info@davideladisa.it",
+    "github": "FrancoStino",
+    "linkedin": "davide-ladisa"
   },
-  "aboutGreeting": "Hi stranger. Welcome to WebShell.",
+  "aboutGreeting": ".",
   "projects": [
     [
       "GofeR",
@@ -31,26 +31,26 @@
     ]
   ],
   "colors": {
-    "background": "#0C0623",
-    "foreground": "#F8DDE5",
-    "banner": "#FF9951",
+    "background": "#282C34",
+    "foreground": "#FFF",
+    "banner": "linear-gradient(90deg, #00EBA9, #70FDFF)",
     "border": {
       "visible": true,
-      "color": "#FFADE2"
+      "color": "#3EB489"
     },
     "prompt": {
       "default": "#A5A7A7",
-      "user": "#FE6BC9",
+      "user": "#3EB489",
       "host": "#70FDFF",
-      "input": "#FF7685"
+      "input": "rgb(67 201 67)"
     },
     "link": {
-      "text": "#B6AAEE",
-      "highlightColor": "#FFADE2",
+      "text": "#00EBA9",
+      "highlightColor": "#AEECDC",
       "highlightText": "#0C0623"
     },
     "commands": {
-      "textColor": "#FD9BDB"
+      "textColor": "#00EBA9"
     }
   }
 }

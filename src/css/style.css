@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;600&family=Pixelify+Sans&family=VT323&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
 
 :root {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Cascadia Code', monospace;
   font-weight: 200;
   --bg: #0C0623;
   --border: #FFADE2;
@@ -76,12 +76,14 @@ pre {
   margin: 0;
   padding: 0;
   line-height: 20px !important;
-  color: #FF9951;
   font-family: "ascii", monospace;
+  background: linear-gradient(90deg, #FF9951, #FF7685);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 input {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Cascadia Code', monospace;
   padding: 0px;
   margin: 0px;
   border: none;
@@ -103,7 +105,7 @@ a:hover {
 }
 
 #bars {
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: 'Cascadia Code', sans-serif;
   font-size: 20px;
   position: -webkit-sticky;
   position: sticky;
@@ -115,7 +117,7 @@ a:hover {
 #bar-1 {
   height: 36px;
   background-color: var(--border);
-  color: var(--bg);
+  color: #FFF !important;
   line-height: 36px;
   padding-left: 10px;
 }
