@@ -15,10 +15,10 @@ const helpObj = {
     ["'sudo'",
       "???"
     ],
-    [
-      "'repo'",
-      "View the Github Repository."
-    ],
+    // [
+    //   "'repo'",
+    //   "View the Github Repository."
+    // ],
     ["'banner'",
       "Display the banner."
     ],
